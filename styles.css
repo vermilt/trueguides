@@ -1,0 +1,177 @@
+/* Universal styles */
+
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Top section with logo */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 4rem;
+    background-color: white;
+}
+
+.logo {
+    padding: 0 2rem;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.navbar a {
+    padding-left: 6rem;
+    padding-right: 0.6rem;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover {
+    color: crimson;
+}
+
+/* Banner Splash */
+
+.main {
+   margin-top: 4rem;
+}
+
+.banner {
+    height: 30rem;
+    background-image: url("/Users/tommilton/Projects/flexbox-business-site-starting/resources/images/ZxIMG_1369 copy.jpg");
+    background-size: cover;
+    background-position: 50% 65%;
+    overflow: hidden;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.banner .content {
+    color: whitesmoke;
+    padding-top: 2rem;
+    
+    
+}
+
+.banner .content h1 {
+    font-size: 6rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    overflow-wrap: normal;
+    margin-bottom: 0;
+}
+
+.banner .content h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Product trips section */
+
+#product {
+    min-height: 30rem;
+    width: 100%;
+}
+
+.current-trips {
+    display: flex;
+    min-height: 20rem;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.trip {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    height: 20rem;
+    margin: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+    transition: all .2s ease-in-out;
+}
+
+.trip:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transform: scale(1.025);
+}
+
+.trip img {
+    height: 75%;
+    max-width: 100%;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+/* Team section */
+
+#team-container {
+    display: block;
+    min-height: 30rem;
+    width: 100%;
+}
+
+.team {
+    background-image: url("/Users/tommilton/Projects/flexbox-business-site-starting/resources/images/IMG_4317-HDR copy.jpg");
+    min-height: 30rem;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.guide {
+    margin: 4rem 0 4rem 0;
+    height: 20rem;
+    min-width: 10rem;
+    background-color: white;
+    flex: 0 1 20%;
+    border-radius: 0.75rem;
+    box-shadow: 0 20px 40px -14px rgba(163, 163, 163, 0.77);
+    font-family: 'Montserrat', sans-serif;
+    transition: all .4s ease-in-out;
+}
+
+.guide:hover {
+    transform: scale(1.2);
+}
+
+.guide h3 {
+    margin-top: 0.25rem;
+    margin-bottom: 0px;
+}
+
+.guide h4 {
+    margin-top: 2px;
+    font-weight: 200;
+}
+
+.guide img {
+    width: 100%;
+    height: 78%;
+    object-fit: cover;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;  
+}
+
+/* Contact Us section */
+
+.contact {
+    display: block;
+    padding-top: 2rem;
+    min-height: 15rem;
+    background-color: white;
+}
